@@ -1,0 +1,206 @@
+:root{
+    --orange:#E55807;
+    --red:#FE0000;
+    --blue:#9BCDD2;
+    --yellow:#F2BE22;
+    --green:#00DFA2;
+}
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+   background-image: url('./Res\ bg.jpg');
+   background-size:cover;
+   background-position: center;
+   height: 100vh;
+   color:var(--orange);
+}
+.important{
+    background-image: url('./menu1.jpg');
+    background-size:contain;
+    background-position: center;
+    height: 100vh;
+    color:var(--orange);
+}
+img{
+    height:80px;
+    width:80px;
+    padding-left: 30px;
+}
+header a{
+    text-decoration: none;
+    color:black;
+}
+header{
+    display: flex;
+    padding: 1em;
+}
+#logo{
+    flex:3;
+    font-family: 'Times New Roman', Times, serif;
+    color:#FE0000;
+    font-size: 2.5em;
+    font-family: cursive,serif;
+}
+nav{
+    flex:2.5;
+    display: flex;
+    gap:10px;
+}
+nav button{
+    flex:1;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-radius: 1em;
+    background-color: #00DFA2;
+}
+nav a:hover{
+    color:red;
+}
+/* Menu file */
+.mainthing{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    padding: 2em;
+}
+.main1{
+   font-size: 4.5em;
+   font-weight: bolder;
+}
+.main2{
+    font-size: 4.5em;
+   font-weight: bolder;
+   padding-left: 1em;
+}
+.main3{
+    font-size: 4.5em;
+   font-weight: bolder;
+   padding-left: 3em;
+}
+.callus{
+    color: var(--yellow);
+    font-size: 1.5em;
+    padding-left: 5em;
+    
+}
+.mainthing div{
+    margin-top:.10em;
+}
+.mainthing button{
+    width:20vw;
+    margin-top: 2em;
+    border-radius: 15px;
+    padding: .7em;
+    background-color: var(--green);
+    font-weight: 600;
+    
+}
+.mainthing>button>a{
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:#FE0000
+}
+.menuhead{
+    font-size: 2em;
+    font-family: cursive;
+    margin:left;
+    color:black;
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color:crimson;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+table{
+    width:100%;
+    padding:1em;
+}
+.menu tr{
+    color:indigo;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+}
+.menu td:nth-child(1){
+    flex:2;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+/* location file */
+.Lochead{
+    background-image: url('./Address\ bg.jpg');
+    background-size:auto;
+    background-position: center;
+    background-repeat: repeat;
+    
+}
+.location{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    height: 250px;
+    width:250px;
+    padding-left: 20px;
+}
+address{
+    color:burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px ;
+    font-weight: bold;
+    padding-top:30px;
+    text-align: center;
+    justify-content: center;
+}
+.location h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color:darkgoldenrod;
+    text-decoration: underline;
+}
+.location h3{
+    color:bisque;
+    font-weight: 800;
+}
+.location div{
+    flex:2;
+}
+.location button{
+    background-color:chartreuse;
+    border-radius: 15px 25px;
+    padding-inline-end: 50px;
+}
+@media screen and (min-width:320px) and (max-width:600px){
+    .menu{
+        grid-template-columns: auto;
+    }
+    }
+
+@media screen and (min-width:600px) and (max-width:900px){
+    .menu{
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width:900px) and (max-width:1200px){
+    .menu{
+        grid-template-columns: auto auto auto;
+    }
+}
+.theme h2 p{
+    
+}
